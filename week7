@@ -1,0 +1,39 @@
+PrintWriter outputfile = new PrintWriter("name.txt");
+		outputfile.println("Simar");
+		outputfile.println("Sahib");
+		outputfile.println("jashan");
+		outputfile.close();
+		
+		FileWriter outputfile2 = new FileWriter("\\\\storage\\storage$\\757409\\Desktop\\CSD_3464_4\\name2.txt", true);
+		PrintWriter output1 = new PrintWriter(outputfile2);
+		output1.println("Karan");
+		output1.println("Sahib");
+		output1.println("jashan");
+		output1.close();
+		
+		
+		PrintWriter outputfile3 = new PrintWriter("src/name.txt");
+		outputfile3.println("Simar");
+		outputfile3.println("Sahib");
+		outputfile3.println("jashan");
+		outputfile3.close();
+		
+		FileWriter outputfile4 = new FileWriter("src/name2.txt", true);
+		PrintWriter output2 = new PrintWriter(outputfile4);
+		output2.println("Karan");
+		output2.println("Sahib");
+		output2.println("jashan");
+		output2.close();
+		
+		FileWriter outputfile5 = new FileWriter("src/name3.txt", true);
+		PrintWriter output4 = new PrintWriter(outputfile5);
+		output4.println("Karan1");
+		output4.println("Sahib2");
+		output4.println("jashan3");
+		output4.println("===================================================");
+		output4.close();
+		
+		
+		File Files = new File("src/name.txt");
+		Files.delete();
+		
