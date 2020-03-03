@@ -70,7 +70,118 @@
 			File Files = new File("name.txt");//the File in package folder
 			Scanner scan = new Scanner(Files);
 			System.out.println(scan.hasNextLine());
+			scan.close()======================
+			/**
+ * 
+ */
+package week8;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+/**
+ * @author 757409
+ *
+ */
+public class methods {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+	
+		   myName();
+		   sum();
+		   String name = "Simar";
+		   Name(name);
+		   int num1 = 788;
+			int num2 = 15;
+			Add(num1, num2);
+			int product = multiply(num1, num2);
+			System.out.println(product);
+			
+			String methods = fileName();
+			WriteFile(methods);
+			printMethod(methods);
+			
+			
+	
+	}
+	
+
+	
+		//1.Simple method to print my name
+		public static void myName()
+		{
+			
+			System.out.println("Simar");
+		}
+		//2.Simple add two numbers
+		public static void sum()
+		{
+		int num1 = 6;
+		int num2 = 15;
+		int result = num1 + num2;
+			System.out.println(result);
+		}
+		
+		//3.declare  name in main method and pass the value 
+		public static void Name(String name)
+		{
+			
+			System.out.println(name);
+		}
+		
+		//4.declare two number in main method and pass the two argument
+		public static void Add(int num1,int num2)
+		{
+		int result = num1 + num2;
+			System.out.println(result);
+		}
+		
+		//5.declare two number in main method and pass the two argument, multiply them and 
+		public static int multiply(int num1,int num2)
+		{
+		int result = num1 * num2;
+		
+	    return result;
+		}
+		
+		public static String fileName()
+		
+		{
+			String file;
+			
+			file =JOptionPane.showInputDialog("Enter " + " the name of file \n");
+			return file;
+			
+		}
+		
+		public static String WriteFile(String methods) throws IOException
+		{
+			PrintWriter outputfile = new PrintWriter("name.txt");
+			outputfile.println("Simar");
+			outputfile.println("Sahib");
+			outputfile.println("jashan");
+			outputfile.close();
+			return methods;
+		}
+		public static void printMethod(String methods) throws IOException
+		{
+			File Files = new File("name.txt");//the File in package folder
+			Scanner scan = new Scanner(Files);
+			System.out.println(scan.hasNextLine());
 			scan.close();
+		
+		}
+	
 		
 		}
 	
